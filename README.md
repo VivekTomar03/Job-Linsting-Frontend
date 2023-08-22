@@ -1,10 +1,10 @@
-# Job Posting Application Frontend Documentation
+# Match Your Role Frontend Documentation
 
-Welcome to the documentation for the frontend of the Job Posting Application. This document provides an overview of the application's different pages and their functionalities.
+Welcome to the documentation for the frontend of the Match Your Role . This document provides an overview of the application's different pages and their functionalities.
 
 ## Introduction
 
-The Job Posting Application is a platform that connects job seekers with employers by providing a user-friendly interface to browse, search, and apply for job openings. With a sleek and intuitive design, the application offers a seamless experience for both candidates and employers to meet their respective needs.
+The Match Your Role  is a platform that connects job seekers with employers by providing a user-friendly interface to browse, search, and apply for job openings. With a sleek and intuitive design, the application offers a seamless experience for both candidates and employers to meet their respective needs.
 
 ## Technologies Used
 - React.js
@@ -70,4 +70,4 @@ For any inquiries or issues, please contact [tomarvivek90viv@gmail.com]().
 
 For more details and specific implementation instructions, refer to the source code and component descriptions.
 
-If you need backend documentation, refer to the [backend repository](https://github.com/your-username/backend-repo).
+If you need backend documentation, refer to the [backend repository](https://github.com/VivekTomar03/Job-Listing-backend).
