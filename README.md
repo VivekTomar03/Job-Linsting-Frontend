@@ -1,90 +1,69 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Flex, Input, Button } from '@chakra-ui/react';
-import { AiFillRobot } from 'react-icons/ai'; // Import bot icon
-import axios from 'axios';
+# Job Posting Application Frontend Documentation
 
-const ChatBot = () => {
-  const [input, setInput] = useState('');
-  const [chat, setChat] = useState([]);
+Welcome to the documentation for the frontend of the Job Posting Application. This document provides an overview of the application's different pages and their functionalities.
 
-  const handleSubmit = async () => {
-    if (input.trim() === '') {
-      return;
-    }
+## Introduction
 
-    setChat([...chat, { text: input, isUser: true }]);
-    setInput('');
+The Job Posting Application is a platform that connects job seekers with employers by providing a user-friendly interface to browse, search, and apply for job openings. With a sleek and intuitive design, the application offers a seamless experience for both candidates and employers to meet their respective needs.
 
-    try {
-      const response = await axios.post('http://localhost:9001/chat', { message: input });
+## Table of Contents
 
-      setChat([...chat, { text: input, isUser: true }, { text: response.data, isUser: false }]);
-    } catch (error) {
-      console.error(error);
-      // Handle error if needed
-    }
-  };
+- [Homepage](#homepage)
+- [Job Listings Page](#job-listings-page)
+- [Single Job Page](#single-job-page)
+- [Employer Dashboard](#employer-dashboard)
+- [Candidate Dashboard](#candidate-dashboard)
+- [Chatbot Integration](#chatbot-integration)
 
-  useEffect(() => {
-    const chatContainer = document.getElementById('chat-container');
-    if (chatContainer) {
-      chatContainer.scrollTop = chatContainer.scrollHeight;
-    }
-  }, [chat]);
+## Homepage
 
-  return (
-    <Box p={4} bg="gray.100" height={"500px"} display="flex" flexDirection="column">
-      <Box
-        id="chat-container"
-        bg="white"
-        p={4}
-        borderRadius="md"
-        flex="1"
-        overflowY="auto"
-        boxShadow="md"
-      >
-        {chat.map((message, index) => (
-          <Flex
-            key={index}
-            justifyContent={message.isUser ? 'flex-end' : 'flex-start'}
-            mb={2}
-            alignItems="flex-end"
-          >
-            <Box
-              bg={message.isUser ? 'teal.400' : 'gray.300'}
-              color={message.isUser ? 'white' : 'black'}
-              p={2}
-              borderRadius="lg"
-              maxWidth="70%"
-              boxShadow="sm"
-              position="relative" // Add position relative for animation
-            >
-              {message.isUser && <AiFillRobot style={{ position: 'absolute', top: '-25px', left: '-30px' }} />} {/* Bot icon */}
-              {message.text}
-            </Box>
-          </Flex>
-        ))}
-      </Box>
-      <Flex mt={4}>
-        <Input
-          flex={1}
-          placeholder="Type your message..."
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyPress={(e) => {
-            if (e.key === 'Enter') {
-              e.preventDefault();
-              handleSubmit();
-            }
-          }}
-          variant="filled"
-        />
-        <Button ml={2} colorScheme="teal" onClick={handleSubmit}>
-          Send
-        </Button>
-      </Flex>
-    </Box>
-  );
-};
+The homepage welcomes users and provides featured job listings. Users can navigate to different sections of the application from here.
 
-export default ChatBot;
+![Homepage](/images/homepage.png)
+
+## Job Listings Page
+
+The Job Listings page displays a list of job openings. Users can search and filter jobs based on various criteria.
+
+![Job Listings](/images/job-listings.png)
+
+## Single Job Page
+
+The Single Job page shows detailed information about a specific job listing, including job title, company, location, and description.
+
+![Single Job](/images/single-job.png)
+
+## Employer Dashboard
+
+The Employer Dashboard allows employers to manage their accounts and post new job openings.
+
+![Employer Dashboard](/images/employer-dashboard.png)
+
+## Candidate Dashboard
+
+The Candidate Dashboard is where job seekers can manage their profiles and track their job applications.
+
+![Candidate Dashboard](/images/candidate-dashboard.png)
+
+## Chatbot Integration
+
+The application features an integrated chatbot that assists users with job-related queries.
+
+![Chatbot](/images/chatbot.png)
+
+## How to Use
+
+1. **Clone the Repository**: Clone this repository to your local machine.
+2. **Install Dependencies**: Navigate to the project folder and run `npm install` to install the required dependencies.
+3. **Run the Application**: Use the command `npm start` to start the development server. The application will be available at `http://localhost:3000`.
+4. **Interact with Pages**: Use the navigation links to explore different pages of the application.
+
+## Support and Contact
+
+For any inquiries or issues, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+For more details and specific implementation instructions, refer to the source code and component descriptions.
+
+If you need backend documentation, refer to the [backend repository](https://github.com/your-username/backend-repo).
