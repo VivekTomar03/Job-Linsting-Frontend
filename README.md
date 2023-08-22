@@ -60,12 +60,7 @@ The application features an integrated chatbot that assists users with job-relat
 
 ![Chatbot](https://i.pinimg.com/750x/8d/c9/23/8dc923c0f372e1a3a5d6e3489c763232.jpg)
 
-## How to Use
 
-1. **Clone the Repository**: Clone this repository to your local machine.
-2. **Install Dependencies**: Navigate to the project folder and run `npm install` to install the required dependencies.
-3. **Run the Application**: Use the command `npm start` to start the development server. The application will be available at `http://localhost:3000`.
-4. **Interact with Pages**: Use the navigation links to explore different pages of the application.
 
 ## Support and Contact
 
