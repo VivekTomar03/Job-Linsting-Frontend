@@ -52,13 +52,13 @@ The Employer Dashboard allows employers to manage their accounts and post new jo
 
 The Candidate Dashboard is where job seekers can manage their profiles and track their job applications.
 
-![Candidate Dashboard](/images/candidate-dashboard.png)
+![Candidate Dashboard](https://i.pinimg.com/750x/54/2b/b5/542bb5cb723720692073aee7dec88376.jpg)
 
 ## Chatbot Integration
 
 The application features an integrated chatbot that assists users with job-related queries.
 
-![Chatbot](https://i.pinimg.com/750x/54/2b/b5/542bb5cb723720692073aee7dec88376.jpg)
+![Chatbot](https://i.pinimg.com/750x/8d/c9/23/8dc923c0f372e1a3a5d6e3489c763232.jpg)
 
 ## How to Use
 
