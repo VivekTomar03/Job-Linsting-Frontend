@@ -6,6 +6,15 @@ Welcome to the documentation for the frontend of the Job Posting Application. Th
 
 The Job Posting Application is a platform that connects job seekers with employers by providing a user-friendly interface to browse, search, and apply for job openings. With a sleek and intuitive design, the application offers a seamless experience for both candidates and employers to meet their respective needs.
 
+## Technologies Used
+- React.js
+- Redux for state management
+- React Router for navigation
+- CHAKRA-UI for styling
+- Axios for API requests
+- CHAT_GPT for chat bot integration
+
+
 ## Table of Contents
 
 - [Homepage](#homepage)
@@ -19,25 +28,25 @@ The Job Posting Application is a platform that connects job seekers with employe
 
 The homepage welcomes users and provides featured job listings. Users can navigate to different sections of the application from here.
 
-![Homepage](/images/homepage.png)
+![Homepage](https://i.pinimg.com/750x/b0/05/01/b00501df4556da22f99992bd640e0553.jpg)
 
 ## Job Listings Page
 
 The Job Listings page displays a list of job openings. Users can search and filter jobs based on various criteria.
 
-![Job Listings](/images/job-listings.png)
+![Job Listings](https://i.pinimg.com/750x/99/5c/8d/995c8dfc4cc6272d6ca6b851b60f3d76.jpg)
 
 ## Single Job Page
 
 The Single Job page shows detailed information about a specific job listing, including job title, company, location, and description.
 
-![Single Job](/images/single-job.png)
+![Single Job](https://i.pinimg.com/750x/a4/36/3e/a4363e832ac615b65ec82c17596d4466.jpg)
 
 ## Employer Dashboard
 
 The Employer Dashboard allows employers to manage their accounts and post new job openings.
 
-![Employer Dashboard](/images/employer-dashboard.png)
+![Employer Dashboard](https://i.pinimg.com/750x/dd/98/c4/dd98c4546f83d0f38a7fe39fa5632380.jpg)
 
 ## Candidate Dashboard
 
@@ -49,7 +58,7 @@ The Candidate Dashboard is where job seekers can manage their profiles and track
 
 The application features an integrated chatbot that assists users with job-related queries.
 
-![Chatbot](/images/chatbot.png)
+![Chatbot](https://i.pinimg.com/750x/54/2b/b5/542bb5cb723720692073aee7dec88376.jpg)
 
 ## How to Use
 
@@ -60,7 +69,7 @@ The application features an integrated chatbot that assists users with job-relat
 
 ## Support and Contact
 
-For any inquiries or issues, please contact [your-email@example.com](mailto:your-email@example.com).
+For any inquiries or issues, please contact [tomarvivek90viv@gmail.com]().
 
 ---
 
